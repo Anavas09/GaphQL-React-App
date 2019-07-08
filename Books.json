@@ -1,0 +1,14 @@
+{"_id":{"$oid":"5d2020c89e23c225e71b3e3b"},"name":"Name of the Wind","genre":"Fantasy","authorId":"5d201af7311da222df716b9a","__v":0}
+{"_id":{"$oid":"5d20213338386e264bebef83"},"name":"The Final Empire","genre":"Fantasy","authorId":"5d201b27311da222df716b9b","__v":0}
+{"_id":{"$oid":"5d20214c38386e264bebef84"},"name":"The Hero of Ages","genre":"Fantasy","authorId":"5d201b27311da222df716b9b","__v":0}
+{"_id":{"$oid":"5d20218d38386e264bebef85"},"name":"The Long Earth","genre":"Fantasy","authorId":"5d201b3a311da222df716b9c","__v":0}
+{"_id":{"$oid":"5d2021b238386e264bebef86"},"name":"The Colour of Magic","genre":"Fantasy","authorId":"5d201b3a311da222df716b9c","__v":0}
+{"_id":{"$oid":"5d2021c938386e264bebef87"},"name":"The Light Fantastic","genre":"Fantasy","authorId":"5d201b3a311da222df716b9c","__v":0}
+{"_id":{"$oid":"5d20220f38386e264bebef88"},"name":"The Night Is Young","genre":"Terror","authorId":"5d2017f943657f2227821fc6","__v":0}
+{"_id":{"$oid":"5d20221c38386e264bebef89"},"name":"The Day Is Old","genre":"Terror","authorId":"5d2017f943657f2227821fc6","__v":0}
+{"_id":{"$oid":"5d20227138386e264bebef8a"},"name":"The Noon Is Low","genre":"Terror","authorId":"5d2017f943657f2227821fc6","__v":0}
+{"_id":{"$oid":"5d20227d38386e264bebef8b"},"name":"The Afternoon Is Hurry","genre":"Terror","authorId":"5d2017f943657f2227821fc6","__v":0}
+{"_id":{"$oid":"5d20232038386e264bebef8c"},"name":"The Earth And The Creatures","genre":"Philosophy","authorId":"5d201bc96cb61e23234b5187","__v":0}
+{"_id":{"$oid":"5d20239a38386e264bebef8d"},"name":"¿Do We Need To Go To Space Or Do We Need Space?","genre":"Philosophy","authorId":"5d201bc96cb61e23234b5187","__v":0}
+{"_id":{"$oid":"5d2023cf38386e264bebef8e"},"name":"We Animals","genre":"Philosophy","authorId":"5d201bc96cb61e23234b5187","__v":0}
+{"_id":{"$oid":"5d20244b38386e264bebef8f"},"name":"Alone","genre":"Philosophy","authorId":"5d201bc96cb61e23234b5187","__v":0}
