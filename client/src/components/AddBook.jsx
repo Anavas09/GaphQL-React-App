@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Query, Mutation } from 'react-apollo';
-import { GET_AUTHORS_QUERY, ADD_BOOK_MUTATION } from '../queries';
+import { GET_AUTHORS_QUERY, ADD_BOOK_MUTATION, GET_BOOKS_QUERY } from '../queries';
 
 class AddBook extends Component {
     constructor(props){
@@ -22,10 +22,24 @@ class AddBook extends Component {
         })
     }
 
+    handleOnComplete(){
+        console.log('Complete')
+        this.setState({
+            name: '',
+            genre: '',
+            authorId: ''
+        })
+    }
+
     handleOnSubmit(e){
+        e.preventDefault()
         const { name, genre, authorId } = this.state
         console.log(`${name}, ${genre}, ${authorId}`)
-        e.preventDefault()
+        this.setState({
+            name: '',
+            genre: '',
+            authorId: ''
+        })
     }
 
     displayAuthors(){
@@ -63,6 +77,7 @@ class AddBook extends Component {
                         <label>Book name:</label>
                         <input
                             name="name"
+                            value={this.state.name}
                             type="text"
                             onChange={this.handleOnChange}
                         />
@@ -71,6 +86,7 @@ class AddBook extends Component {
                         <label>Genre:</label>
                         <input
                             name="genre"
+                            value={this.state.genre}
                             type="text"
                             onChange={this.handleOnChange}
                         />
@@ -88,6 +104,8 @@ class AddBook extends Component {
                     <Mutation
                         mutation={ADD_BOOK_MUTATION}
                         variables={{name, genre, authorId}}
+                        refetchQueries={[{query: GET_BOOKS_QUERY}]}
+                        onCompleted={()=>this.handleOnComplete()}
                     >
                         {postMutation => <button onClick={postMutation}>+</button>}
                     </Mutation>
