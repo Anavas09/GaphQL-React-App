@@ -13,8 +13,8 @@ const BookDetails = ({bookId}) => {
             
                 return (
                     <div>
-                        <h3>{data.book.genre}</h3>
-                        <h3>{data.book.author.name}</h3>
+                        <h3>Author: {data.book.author.name}</h3>
+                        <h3>Genre: {data.book.genre}</h3>
                         <h4>{data.book.author.name} Books:</h4>
                         <h5>{data.book.author.books.map(book =>{
                         return (
