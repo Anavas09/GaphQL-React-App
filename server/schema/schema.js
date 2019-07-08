@@ -1,5 +1,4 @@
 const graphql = require('graphql');
-const _ = require('lodash');
 
 const Author = require('../model/authors');
 const Book = require('../model/books');
@@ -39,7 +38,7 @@ const BookType = new GraphQLObjectType({
         author: {
             type: AuthorType,
             async resolve(parent, args){
-                const Authors = await Author.find({id: parent.authorId})
+                const Authors = await Author.findById(parent.authorId)
                 return Authors
             }
         }
