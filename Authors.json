@@ -1,0 +1,5 @@
+{"_id":{"$oid":"5d2017f943657f2227821fc6"},"name":"Mark Alvarez","age":37,"__v":0}
+{"_id":{"$oid":"5d201af7311da222df716b9a"},"name":"Patrick RothFuss","age":44,"__v":0}
+{"_id":{"$oid":"5d201b27311da222df716b9b"},"name":"Brandon Sanderson","age":42,"__v":0}
+{"_id":{"$oid":"5d201b3a311da222df716b9c"},"name":"Terry Pratchett","age":66,"__v":0}
+{"_id":{"$oid":"5d201bc96cb61e23234b5187"},"name":"Bobby Weiss","age":72,"__v":0}
