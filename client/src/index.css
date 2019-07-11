@@ -12,3 +12,82 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+#main h1{
+  color: #444;
+  text-align: center;
+}
+
+#main{
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0px;
+  width: 60%;
+}
+
+#book-list{
+  padding: 0;
+}
+
+#book-list li{
+  border: 1px solid rgb(5, 48, 167);
+  border-radius: 4px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+  color: rgb(5, 48, 167);
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  margin: 12px;
+}
+
+form{
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  position: fixed;
+  width: 400px;
+}
+
+form .field{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+form label{
+  padding: 6px;
+  text-align: right;
+}
+
+form select, form input{
+  box-sizing: border-box;
+  margin: 4px;
+  padding: 6px;
+}
+
+form button{
+  background: rgb(32, 40, 139);
+  border: 0;
+  border-radius: 50%;
+  bottom: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2em;
+  left: 10px;
+  padding: 0 10px;
+  position: absolute;
+}
+
+#book-details{
+  background: rgb(32, 40, 139);
+  box-shadow: -2px -3px 5px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  color: #fff;
+  height: 100%;
+  right: 0;
+  overflow: auto;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  width: 40%;
+}

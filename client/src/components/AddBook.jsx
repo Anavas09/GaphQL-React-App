@@ -11,18 +11,16 @@ class AddBook extends Component {
             genre: '',
             authorId: ''
         }
-        this.handleOnChange = this.handleOnChange.bind(this);
-        this.handleOnSubmit = this.handleOnSubmit.bind(this);
     }
 
-    handleOnChange(e){
+    handleOnChange = (e) => {
         console.log(`${[e.target.name]}: ${e.target.value}`)
         this.setState({
             [e.target.name]: e.target.value
         })
     }
 
-    handleOnComplete(){
+    handleOnComplete = () => {
         console.log('Complete')
         this.setState({
             name: '',
@@ -31,7 +29,7 @@ class AddBook extends Component {
         })
     }
 
-    handleOnSubmit(e){
+    handleOnSubmit = (e) => {
         e.preventDefault()
         const { name, genre, authorId } = this.state
         console.log(`${name}, ${genre}, ${authorId}`)
@@ -42,7 +40,7 @@ class AddBook extends Component {
         })
     }
 
-    displayAuthors(){
+    displayAuthors = () => {
         return (
             <Query query={GET_AUTHORS_QUERY}>
                 {({ loading, error, data }) => {

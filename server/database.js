@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-//mongodb+srv://anavas:15463mongo@graphql-anavas-2ntlo.mongodb.net/test?retryWrites=true&w=majority
+//mongodb+srv://anavas:15463mongo@graphql-anavas-2ntlo.mongodb.net/graphql-anavas?retryWrites=true&w=majority
 
-const URI = 'mongodb+srv://anavas:15463mongo@graphql-anavas-2ntlo.mongodb.net/graphql-anavas?retryWrites=true&w=majority';
+const URI = 'mongodb://localhost/graphql-anavas';
 
 mongoose.connect(URI, { useNewUrlParser: true })
     .then(db => {

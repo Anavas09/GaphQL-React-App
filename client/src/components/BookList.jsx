@@ -10,16 +10,15 @@ class BookList extends Component {
         this.state = {
             selected: null
         }
-        this.handleOnClick = this.handleOnClick.bind(this);
     }
     
-    handleOnClick(id){
+    handleOnClick = (id) => {
         this.setState({
             selected: id
         })
     }
 
-    bookList() {
+    bookList = () => {
         return (
             <Query query={GET_BOOKS_QUERY}>
                 {({ loading, error, data }) => {
